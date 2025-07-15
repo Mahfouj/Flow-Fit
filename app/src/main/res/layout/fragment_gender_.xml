@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".Gender_Fragment">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <!-- Back Arrow -->
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back_arrow"
+            android:contentDescription="Back"/>
+
+        <!-- Step Text -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Step 1 of 8"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <!-- Skip -->
+        <TextView
+            android:id="@+id/btn_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose gender"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Gender Options -->
+    <RadioGroup
+        android:id="@+id/gender_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Woman -->
+        <RadioButton
+            android:id="@+id/radio_woman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gender_option"
+            android:button="@null"
+            android:drawableStart="@drawable/woman"
+            android:drawablePadding="8dp"
+            android:padding="16dp"
+            android:text="Woman"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Man -->
+        <RadioButton
+            android:id="@+id/radio_man"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gender_option"
+            android:button="@null"
+            android:drawableStart="@drawable/man"
+            android:drawablePadding="8dp"
+            android:padding="16dp"
+            android:text="Man"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Gender Neutral -->
+        <RadioButton
+            android:id="@+id/radio_neutral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gender_option"
+            android:button="@null"
+            android:drawableStart="@drawable/neutral"
+            android:drawablePadding="8dp"
+            android:padding="16dp"
+            android:text="Gender neutral"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary"/>
+    </RadioGroup>
+
+    <!-- Spacer -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Continue Button -->
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:background="@drawable/gender_button"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"/>
+
+
+
+
+
+</LinearLayout>

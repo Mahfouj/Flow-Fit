@@ -35,4 +35,34 @@
         android:name="com.example.flowfit.Verification"
         android:label="fragment_verification"
         tools:layout="@layout/fragment_verification" />
+    <fragment
+        android:id="@+id/gender_Fragment"
+        android:name="com.example.flowfit.Gender_Fragment"
+        android:label="fragment_gender_"
+        tools:layout="@layout/fragment_gender_" />
+    <fragment
+        android:id="@+id/choice_The_Goal"
+        android:name="com.example.flowfit.Choice_The_Goal"
+        android:label="fragment_choice__the__goal"
+        tools:layout="@layout/fragment_choice__the__goal" />
+    <fragment
+        android:id="@+id/birth_Date"
+        android:name="com.example.flowfit.Birth_Date"
+        android:label="fragment_birth__date"
+        tools:layout="@layout/fragment_birth__date" />
+    <fragment
+        android:id="@+id/select_Height"
+        android:name="com.example.flowfit.Select_Height"
+        android:label="fragment_select__height"
+        tools:layout="@layout/fragment_select__height" />
+    <fragment
+        android:id="@+id/select_weight"
+        android:name="com.example.flowfit.Select_weight"
+        android:label="fragment_select_weight"
+        tools:layout="@layout/fragment_select_weight" />
+    <fragment
+        android:id="@+id/select_Goal_weight"
+        android:name="com.example.flowfit.select_Goal_weight"
+        android:label="fragment_select__goal_weight"
+        tools:layout="@layout/fragment_select__goal_weight" />
 </navigation>

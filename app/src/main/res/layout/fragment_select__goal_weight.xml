@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".select_Goal_weight">
+
+    <!-- Header (Back + Step + Skip) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back_arrow"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Step 6 of 8"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/btn_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select goal weight"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="120dp"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Unit Toggle -->
+
+    <!-- Height Input -->
+    <RadioGroup
+        android:id="@+id/unit_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_toggle_container"
+        android:padding="4dp">
+
+        <RadioButton
+            android:id="@+id/rb_feet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_toggle_off"
+            android:button="@null"
+
+            android:text="Pound"
+            android:textColor="@color/text_secondary"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="8dp"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_toggle_on"
+            android:button="@null"
+            android:text="Kilogram"
+            android:textColor="@color/text_secondary"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="8dp"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <EditText
+            android:id="@+id/input_height"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:hint="68"
+            android:inputType="number"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/bg_input_box"
+            android:textColor="@color/text_primary"
+            android:maxLength="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KG"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <!-- Spacer -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Continue Button -->
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textColor="@android:color/white"
+        android:background="@drawable/gender_button"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+
+</LinearLayout>
