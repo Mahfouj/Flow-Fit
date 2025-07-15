@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:gravity="center"
+    tools:context=".Verification">
+
+
+
+
+
+    <!-- Phone Verification Header -->
+    <TextView
+        android:text="Phone verification"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Subheading: Phone Number -->
+    <TextView
+        android:text="We sent a code to your number"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Phone Number with 'Change' Option -->
+    <TextView
+        android:text="9(173)605-76-05"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- 'Change' Link for phone number -->
+    <TextView
+        android:id="@+id/txt_change_phone"
+        android:text="Change"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Code Entry Fields (4 boxes) -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <!-- Each box for entering verification code -->
+        <EditText
+            android:id="@+id/code_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:maxLength="1"
+            android:text="1"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/code_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:background="@drawable/code_box_bg"
+            android:maxLength="1"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/code_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="3"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:background="@drawable/code_box_bg"
+            android:maxLength="1"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/code_4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:background="@drawable/code_box_bg"
+            android:maxLength="1"/>
+    </LinearLayout>
+
+    <!-- 'Resend Code' Link -->
+    <TextView
+        android:id="@+id/txt_resend_code"
+        android:text="Don't receive your code? Resend"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Custom Numeric Keypad -->
+    <GridLayout
+        android:orientation="horizontal"
+        android:columnCount="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <!-- Numeric Buttons -->
+        <Button
+            android:text="1"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/number_button_bg"/>
+
+        <Button
+            android:text="2"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/number_button_bg"/>
+
+        <Button
+            android:text="3"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/number_button_bg"/>
+
+        <Button
+            android:text="4"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/number_button_bg"/>
+
+        <Button
+            android:text="5"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+
+            android:background="@drawable/number_button_bg"/>
+
+        <Button
+            android:text="6"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+
+            android:background="@drawable/number_button_bg"/>
+
+        <Button
+            android:text="7"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+
+            android:background="@drawable/number_button_bg"/>
+
+        <Button
+            android:text="8"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+
+            android:background="@drawable/number_button_bg"/>
+
+        <Button
+            android:text="9"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+
+            android:background="@drawable/number_button_bg"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            />
+
+        <!-- Backspace (Delete) Button -->
+        <Button
+            android:text="0"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:layout_marginStart="120dp"
+            android:background="@drawable/number_button_bg"/>
+
+
+        <Button
+            android:text="⌫"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:layout_marginStart="120dp"
+            android:background="@drawable/number_button_bg"/>
+
+    </GridLayout>
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gardiant_color"
+    tools:context=".User_Choice">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/placeholder"
+        >
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/bg_bottom_drawer"
+            android:padding="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:elevation="3dp">
+
+
+
+
+            <!-- Heading -->
+            <TextView
+                android:text="Millions of Users’ Choice"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- Subtitle -->
+            <TextView
+                android:text="We believe that our app should inspire you to be the best version of yourself"
+                android:textSize="20sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- Feature List -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/advantages"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    style="@style/TextAppearance.AppCompat.Display4"
+                    />
+
+            </LinearLayout>
+
+            <!-- Pricing Options -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Monthly Plan -->
+
+                <!-- Yearly Plan -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sell"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/plan">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                    </LinearLayout>
+
+                    <!-- Badge -->
+                    <TextView
+                        android:text="Save 70%"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp"
+                        android:padding="4dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- Continue Button -->
+            <Button
+                android:text="Continue"
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColor="@color/button_text"
+                android:background="@drawable/button"/>
+
+            <!-- Disclaimer -->
+            <TextView
+                android:text="Eget nunc scelerisque viverra mauris in aliquam sem fringilla"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/welcome_Screen">
+
+    <fragment
+        android:id="@+id/welcome_Screen"
+        android:name="com.example.flowfit.Welcome_Screen"
+        android:label="fragment_welcome__screen"
+        tools:layout="@layout/fragment_welcome__screen" />
+    <fragment
+        android:id="@+id/wrokout_Catagories"
+        android:name="com.example.flowfit.Wrokout_Catagories"
+        android:label="fragment_wrokout__catagories"
+        tools:layout="@layout/fragment_wrokout__catagories" />
+    <fragment
+        android:id="@+id/user_Choice"
+        android:name="com.example.flowfit.User_Choice"
+        android:label="fragment_user__choice"
+        tools:layout="@layout/fragment_user__choice" />
+    <fragment
+        android:id="@+id/custom_Workout"
+        android:name="com.example.flowfit.Custom_Workout"
+        android:label="fragment_custom__workout"
+        tools:layout="@layout/fragment_custom__workout" />
+    <fragment
+        android:id="@+id/sing_up"
+        android:name="com.example.flowfit.sing_up"
+        android:label="fragment_sing_up"
+        tools:layout="@layout/fragment_sing_up" />
+    <fragment
+        android:id="@+id/verification"
+        android:name="com.example.flowfit.Verification"
+        android:label="fragment_verification"
+        tools:layout="@layout/fragment_verification" />
+</navigation>

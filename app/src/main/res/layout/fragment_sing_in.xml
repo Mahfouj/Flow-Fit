@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:gravity="center"
+    tools:context=".sing_in">
+
+
+
+
+    <!-- Phone / Email Input Field -->
+    <TextView
+        android:layout_width="158dp"
+        android:layout_height="58dp"
+        android:text="Sing In"
+        android:textColor="@color/purple_700"
+        android:textSize="27dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginBottom="140dp"
+        />
+
+
+
+
+
+
+
+    <!-- Phone / Email Input Field -->
+    <EditText
+        android:id="@+id/et_email_phone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Phone / Email"
+        android:inputType="textEmailAddress|phone"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Password Input Field -->
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Sign In Button -->
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="Sign In"
+        android:background="@drawable/button"
+        android:textColor="@color/button_text"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Forgot Password Link -->
+    <TextView
+        android:id="@+id/txt_forgot_password"
+        android:text="Forgot Password?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Social Sign-In Section -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:src="@drawable/apple_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageView
+            android:src="@drawable/facbook_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageView
+            android:src="@drawable/google"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+
+    <!-- Sign Up Link -->
+    <TextView
+        android:id="@+id/txt_sign_up"
+        android:text="Don't have an account? Sign Up"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

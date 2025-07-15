@@ -2,4 +2,48 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <!-- App Primary Palette -->
+    <color name="colorPrimary">#5C6BC0</color> <!-- Indigo -->
+    <color name="colorPrimaryDark">#3949AB</color>
+    <color name="colorAccent">#FF7043</color> <!-- Deep Orange -->
+
+    <!-- Backgrounds -->
+    <color name="background">#FFFFFF</color>
+    <color name="background_light">#F5F5F5</color>
+    <color name="background_dark">#121212</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color> <!-- Dark gray -->
+    <color name="text_secondary">#757575</color>
+    <color name="text_inverse">#FFFFFF</color>
+
+    <!-- Button States -->
+    <color name="button_enabled">#5C6BC0</color>
+    <color name="button_disabled">#BDBDBD</color>
+    <color name="button_text">#FFFFFF</color>
+
+    <!-- Input Fields -->
+    <color name="input_border">#B0BEC5</color>
+    <color name="input_focus">#5C6BC0</color>
+    <color name="input_error">#D32F2F</color>
+
+    <!-- Progress & Indicators -->
+    <color name="progress_primary">#5C6BC0</color>
+    <color name="progress_background">#E0E0E0</color>
+
+    <!-- Tags, Chips, Highlights -->
+    <color name="chip_selected">#FF7043</color>
+    <color name="chip_unselected">#EEEEEE</color>
+
+    <!-- Miscellaneous -->
+    <color name="divider">#E0E0E0</color>
+    <color name="card_shadow">#40000000</color>
+    <color name="overlay">#66000000</color> <!-- semi-transparent black -->
+    <color name="error_red">#D32F2F</color>
+    <color name="success_green">#388E3C</color>
+    <color name="warning_orange">#FFA000</color>
+
+    <color name="purple_700">#6126C8</color>
 </resources>
