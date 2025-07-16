@@ -3,125 +3,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   android:orientation="vertical"
+    android:orientation="vertical"
     android:padding="24dp"
-    tools:context=".Choice_The_Goal">
+    android:background="@android:color/white"
+    tools:context=".Select_Level">
 
     <!-- Header -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
         android:orientation="horizontal"
+        android:gravity="center_vertical"
         android:layout_marginBottom="24dp">
 
-        <!-- Back Arrow -->
         <ImageView
             android:id="@+id/btn_back"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/back_arrow"
-            android:contentDescription="Back"/>
+            android:contentDescription="Back" />
 
-        <!-- Step Text -->
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Step 2 of 8"
+            android:text="Step 7 of 8"
             android:textSize="14sp"
-            android:textColor="@color/colorPrimary"/>
+            android:textColor="@color/colorPrimary" />
 
-        <!-- Skip -->
         <TextView
             android:id="@+id/btn_skip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Skip"
             android:textColor="@color/colorPrimary"
-            android:textSize="14sp"/>
+            android:textSize="14sp" />
     </LinearLayout>
 
     <!-- Title -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose Main Goal"
-        android:textSize="35dp"
+        android:text="Choose training level"
+        android:textSize="29dp"
         android:textStyle="bold"
-       android:layout_marginStart="30dp"
+        android:layout_marginEnd="60dp"
+         android:layout_marginStart="100dp"
         android:textColor="@color/text_primary"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="29dp" />
 
-    <!-- Gender Options -->
+    <!-- Options -->
     <RadioGroup
-        android:id="@+id/gender_group"
+        android:id="@+id/level_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-       android:layout_marginTop="60dp"
         android:orientation="vertical">
 
-        <!-- Woman -->
+        <!-- Beginner -->
         <RadioButton
-            android:id="@+id/radio_woman"
+            android:id="@+id/radio_beginner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_gender_option"
+            android:background="@drawable/bg_level_option"
             android:button="@null"
-            android:drawableStart="@drawable/lose_weight"
-            android:drawablePadding="8dp"
-            android:padding="16dp"
-            android:text="Lose Weight"
-            android:textSize="16dp"
+            android:padding="26dp"
             android:textColor="@color/text_primary"
-            android:layout_marginBottom="12dp"/>
+            android:textSize="26dp"
+            android:text="Beginner\nI want to start training" />
 
-
-        <!-- Man -->
+        <!-- Irregular Training -->
         <RadioButton
-            android:id="@+id/radio_man"
+            android:id="@+id/radio_irregular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_gender_option"
+            android:background="@drawable/bg_level_option"
             android:button="@null"
-            android:drawableStart="@drawable/keep_fit"
-            android:drawablePadding="8dp"
             android:padding="16dp"
-            android:text="Keep Fit"
-            android:textSize="16dp"
             android:textColor="@color/text_primary"
-            android:layout_marginBottom="12dp"/>
+            android:textSize="26dp"
+            android:text="Irregular training\nI train 1-2 times a week" />
 
-        <!-- Gender Neutral -->
+        <!-- Medium -->
         <RadioButton
-            android:id="@+id/radio_neutral"
+            android:id="@+id/radio_medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_gender_option"
+            android:background="@drawable/bg_level_option"
             android:button="@null"
-            android:drawableStart="@drawable/get_stronger"
-            android:drawablePadding="8dp"
             android:padding="16dp"
-            android:text="Get Stronger"
-            android:textSize="16dp"
-            android:textColor="@color/text_primary"/>
+            android:textColor="@color/text_primary"
+            android:textSize="26dp"
+            android:text="Medium\nI train 3-5 times a week" />
 
+        <!-- Advanced -->
         <RadioButton
-             android:layout_width="match_parent"
+            android:id="@+id/radio_advanced"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_gender_option"
+            android:background="@drawable/bg_level_option"
             android:button="@null"
-            android:drawableStart="@drawable/gain_muscile"
-            android:drawablePadding="8dp"
             android:padding="16dp"
-            android:text="Gain Muscle mass "
-            android:textSize="16sp"
-            android:textColor="@color/text_primary"/>
-
+            android:textColor="@color/text_primary"
+            android:textSize="26dp"
+            android:text="Advanced\nI train more than 5 times a week" />
     </RadioGroup>
 
-
+    <!-- Spacer -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
     <!-- Continue Button -->
     <Button
@@ -129,9 +121,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Continue"
-        android:background="@drawable/gender_button"
-
         android:textColor="@android:color/white"
-        android:textSize="16sp"
-        android:layout_marginTop="54dp"/>
+        android:background="@drawable/gender_button"
+        android:layout_marginTop="16dp" />
+
+
+
+
 </LinearLayout>

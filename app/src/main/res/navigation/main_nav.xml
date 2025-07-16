@@ -65,4 +65,59 @@
         android:name="com.example.flowfit.select_Goal_weight"
         android:label="fragment_select__goal_weight"
         tools:layout="@layout/fragment_select__goal_weight" />
+    <fragment
+        android:id="@+id/sing_in"
+        android:name="com.example.flowfit.sing_in"
+        android:label="fragment_sing_in"
+        tools:layout="@layout/fragment_sing_in" />
+    <fragment
+        android:id="@+id/select_Level"
+        android:name="com.example.flowfit.Select_Level"
+        android:label="fragment_select__level"
+        tools:layout="@layout/fragment_select__level" />
+    <fragment
+        android:id="@+id/select_Activities"
+        android:name="com.example.flowfit.Select_Activities"
+        android:label="fragment_select__activities"
+        tools:layout="@layout/fragment_select__activities" />
+    <fragment
+        android:id="@+id/create_Plan"
+        android:name="com.example.flowfit.Create_Plan"
+        android:label="fragment_create__plan"
+        tools:layout="@layout/fragment_create__plan" />
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.flowfit.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/trainings2_With_Filter"
+        android:name="com.example.flowfit.Trainings2_With_Filter"
+        android:label="fragment_trainings2__with__filter"
+        tools:layout="@layout/fragment_trainings2__with__filter" />
+    <fragment
+        android:id="@+id/trainings_V1"
+        android:name="com.example.flowfit.Trainings_V1"
+        android:label="fragment_trainings__v1"
+        tools:layout="@layout/fragment_trainings__v1" />
+    <fragment
+        android:id="@+id/activity"
+        android:name="com.example.flowfit.Activity"
+        android:label="fragment_activity"
+        tools:layout="@layout/fragment_activity" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.flowfit.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/profile_Premium"
+        android:name="com.example.flowfit.Profile_Premium"
+        android:label="fragment_profile__premium"
+        tools:layout="@layout/fragment_profile__premium" />
+    <fragment
+        android:id="@+id/category"
+        android:name="com.example.flowfit.Category"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" />
 </navigation>

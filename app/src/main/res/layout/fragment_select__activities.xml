@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/white"
+    tools:context=".Select_Activities">
+
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back_arrow"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Step 8 of 8"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/btn_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose activities that interest"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Activities List -->
+    <LinearLayout
+        android:id="@+id/activity_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Cardio -->
+        <CheckBox
+            android:id="@+id/cb_cardio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_level_option"
+            android:button="@null"
+            android:padding="16dp"
+            android:drawableStart="@drawable/cardio"
+            android:drawablePadding="12dp"
+            android:text="Cardio"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+
+        <!-- Power Training -->
+        <CheckBox
+            android:id="@+id/cb_power"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_level_option"
+            android:button="@null"
+            android:padding="16dp"
+            android:drawableStart="@drawable/ic_power"
+            android:drawablePadding="12dp"
+            android:text="Power training"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+
+        <!-- Stretch -->
+        <CheckBox
+            android:id="@+id/cb_stretch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_level_option"
+            android:button="@null"
+            android:padding="16dp"
+            android:drawableStart="@drawable/ic_strerch"
+            android:drawablePadding="12dp"
+            android:text="Stretch"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+
+        <!-- Dancing -->
+        <CheckBox
+            android:id="@+id/cb_dancing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_level_option"
+            android:button="@null"
+            android:padding="16dp"
+            android:drawableStart="@drawable/dancing"
+            android:drawablePadding="12dp"
+            android:text="Dancing"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+
+        <!-- Yoga -->
+        <CheckBox
+            android:id="@+id/cb_yoga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_level_option"
+            android:button="@null"
+            android:padding="16dp"
+            android:drawableStart="@drawable/yoga"
+            android:drawablePadding="12dp"
+            android:text="Yoga"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- Spacer -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Continue Button -->
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textColor="@android:color/white"
+        android:background="@drawable/gender_button"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

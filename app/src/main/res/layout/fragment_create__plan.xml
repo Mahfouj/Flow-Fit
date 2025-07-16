@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gardian_color2"
+    android:padding="24dp"
+    tools:context=".Create_Plan">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We create your\ntraining plan"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Circular Progress -->
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:indeterminate="false"
+        android:progress="75"
+        android:max="100"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Progress Text -->
+    <TextView
+        android:id="@+id/txt_progress_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="75%"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We create a workout according\nto demographic profile, activity\nlevel and interests"
+        android:textAlignment="center"
+        android:textColor="#888888"
+        android:textSize="14sp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Start Training Button -->
+    <Button
+        android:id="@+id/btn_start_training"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Training"
+        android:background="@drawable/bg_button_gradien"
+        android:textColor="@android:color/white" />
+
+
+
+</LinearLayout>
